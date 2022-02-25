@@ -1,0 +1,6 @@
+export const background = '#000'
+export const textColor = '#fff'
+export const button = '#8257e5'
+export const border = '#29292e'
+export const borderMenuMobile = '#a8a8b3'
+export const textColorMenuMobile = '#e1e1e6'

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyle } from './assets/styles/GlobalStyle'
+import { Header } from './components/Header'
+import { Main } from './components/Main'
+import styled from 'styled-components'
+import { background } from './assets/styles/Colors'
 
-function App() {
+const Container = styled.div`
+  background: ${background};
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    height: 100vh;
+  }
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <GlobalStyle />
+      <Header />
+      <Main />
+    </Container>
+  )
 }
 
-export default App;
+export default App
