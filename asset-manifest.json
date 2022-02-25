@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/rocket-coffe/static/js/main.c66e6ba5.js",
+    "static/media/coffe.svg": "/rocket-coffe/static/media/coffe.3ef80db1ad2d71d108bed2880027713f.svg",
+    "static/media/logo-mobile.svg": "/rocket-coffe/static/media/logo-mobile.872bc37676cecff51fe9c2c5ebb14a3a.svg",
+    "static/media/logo.svg": "/rocket-coffe/static/media/logo.c5b4335a3cfefe285e0e20a4d7385848.svg",
+    "index.html": "/rocket-coffe/index.html",
+    "static/media/menu.svg": "/rocket-coffe/static/media/menu.27ed7335a9d5d49e0a3514fc3f3e19e2.svg",
+    "main.c66e6ba5.js.map": "/rocket-coffe/static/js/main.c66e6ba5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c66e6ba5.js"
+  ]
+}
