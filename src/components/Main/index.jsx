@@ -17,7 +17,9 @@ export const Main = () => {
       <Container>
         <MobileContent>
           O café que fará seu código decolar para o próximo nível
-          <ButtonSubmit style={{ marginBottom: '20px' }}>
+          <ButtonSubmit
+            style={{ marginBottom: '25px', minHeight: '43px', zIndex: '10' }}
+          >
             Pegar meu café &gt;
           </ButtonSubmit>
         </MobileContent>

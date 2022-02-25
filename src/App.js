@@ -12,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow-y: scroll;
 
   @media (max-width: 900px) {
     height: 100vh;

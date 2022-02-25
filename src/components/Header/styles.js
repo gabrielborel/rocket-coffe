@@ -128,7 +128,7 @@ export const Menu = styled.div`
   bottom: 0;
   right: 0;
   width: 100%;
-  height: calc(100% - 93px);
+  height: calc(100% - 92px);
   color: white;
   z-index: 10;
 

@@ -26,6 +26,7 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   color: ${textColor};
+  z-index: -1;
 `
 
 export const MainTitle = styled.p`
@@ -34,6 +35,14 @@ export const MainTitle = styled.p`
 
   @media (max-width: 650px) {
     font-size: 40px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 29px;
   }
 `
 
@@ -54,7 +63,7 @@ export const MobileContent = styled.div`
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @media (max-width: 650px) {
     display: flex;
@@ -83,6 +92,7 @@ const Blur = styled.span`
 
 export const RightBlur = styled(Blur)`
   :after {
+    position: absolute;
     top: -60px;
     right: -60px;
     animation: inicioBlurRight 1.3s linear forwards 1;
@@ -101,6 +111,7 @@ export const RightBlur = styled(Blur)`
 
 export const LeftBlur = styled(Blur)`
   :after {
+    position: absolute;
     bottom: -60px;
     left: -60px;
     animation: inicioBlurLeft 1.3s linear forwards 1;
@@ -116,8 +127,26 @@ export const LeftBlur = styled(Blur)`
     :after {
       width: 400px;
       height: 400px;
-      bottom: -50px;
+      bottom: 0;
       left: 1%;
+    }
+  }
+
+  @media (max-width: 650px) {
+    :after {
+      bottom: -50px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    :after {
+      bottom: -100px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    :after {
+      bottom: -150px;
     }
   }
 `
